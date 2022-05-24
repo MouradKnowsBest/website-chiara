@@ -1,5 +1,11 @@
 .container {
   padding: 0 2rem;
+  background-color : #797673
+}
+
+.subcontainer {
+  padding: 10rem;
+  background-color : #F1EAE4
 }
 
 .main {
@@ -43,6 +49,14 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight:lighter
+}
+
+.title b {
+  margin: 0;
+  font-size: 4rem;
+  font-weight:normal;
+  font-style: italic;
 }
 
 .title,
