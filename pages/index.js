@@ -10,6 +10,9 @@ export default function Home() {
         <Header />
         <Main />
         <Footer />
+
+        <h5>Created by Assirem @Dev</h5>
+        
       </div>
     </div>
   );

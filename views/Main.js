@@ -1,48 +1,54 @@
-import React from 'react'
+import React from "react";
 import styles from "../styles/Home.module.css";
 
 function Main() {
   return (
+    <main style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}} className={styles.main}>
+      <p style={{ transform: "rotate(-90deg)" }} className={styles.description}>
+        How can I help{" "}
+      </p>
 
-    <main className={styles.main}>
+      <div className={styles.grid}>
+        <a href="https://nextjs.org/docs" className={styles.card}>
+          <h2>COACHING &rarr;</h2>
+          <img
+            style={{ height:"300px", width:"auto" }}
+            src="./coaching.jpg"
+            alt="chiara-portrait"
+          ></img>
+          <p>Find in-depth information about Coaching sessions</p>
+        </a>
+      </div>
+      <div className={styles.grid}>
+        <a href="https://nextjs.org/docs" className={styles.card}>
+          <h2>YOGA &rarr;</h2>
+          <img
+            style={{ height:"300px", width:"auto" }}
+            src="./yoga.webp"
+            alt="chiara-portrait"
+          ></img>
+          <p>Find in-depth information about Yoga sessions</p>
+        </a>
+      </div>
 
-    <p className={styles.description}>
-      Get started by editing{' '}
-      <code className={styles.code}>pages/index.js</code>
-    </p>
+      <div className={styles.grid}>
+        <a href="https://nextjs.org/docs" className={styles.card}>
+          <h2>ASTROLOGY &rarr;</h2>
+          <img
+            style={{ height:"300px", width:"auto" }}
+            src="./astrology.jpg"
+            alt="chiara-portrait"
+          ></img>
+          <p>Find in-depth information about Astrology sessions</p>
+        </a>
+      </div>
 
-    <div className={styles.grid}>
-      <a href="https://nextjs.org/docs" className={styles.card}>
-        <h2>Documentation &rarr;</h2>
-        <p>Find in-depth information about Next.js features and API.</p>
-      </a>
+      <p style={{ transform: "rotate(90deg)" }} className={styles.description}>
+        How can I help{" "}
+      </p>
 
-      <a href="https://nextjs.org/learn" className={styles.card}>
-        <h2>Learn &rarr;</h2>
-        <p>Learn about Next.js in an interactive course with quizzes!</p>
-      </a>
-
-      <a
-        href="https://github.com/vercel/next.js/tree/canary/examples"
-        className={styles.card}
-      >
-        <h2>Examples &rarr;</h2>
-        <p>Discover and deploy boilerplate example Next.js projects.</p>
-      </a>
-
-      <a
-        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        className={styles.card}
-      >
-        <h2>Deploy &rarr;</h2>
-        <p>
-          Instantly deploy your Next.js site to a public URL with Vercel.
-        </p>
-      </a>
-    </div>
-  </main>
-
-  )
+    </main>
+  );
 }
 
-export default Main
+export default Main;

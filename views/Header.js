@@ -44,7 +44,7 @@ function Header() {
 
       </div>
 
-        <p style={{marginTop:"30px", textAlign :"center" , width:"900px", margin: "auto"}}>
+        <p style={{marginTop:"80px", textAlign :"center" , width:"900px", margin: "auto"}}>
           Creating a life you love takes a willingness to dig under the surface
           of who you are and reveal what it is you want for your life. Having a
           coach to support, challenge and motivate you can make the sometimes
