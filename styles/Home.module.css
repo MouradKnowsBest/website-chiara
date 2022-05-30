@@ -1,9 +1,22 @@
+/* @media all and (min-width: 600px) and (max-width: 1280px) {
+
+.container{
+  display: flex
+}
+
+} */
+
+
 .container {
   padding: 5rem 5rem 5rem 5rem;
-  background-color : #797673
+  background-color : #797673;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .subcontainer {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10rem;
   background-color : #F1EAE4;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
@@ -18,6 +31,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -28,6 +44,9 @@
   justify-content: center;
   align-items: center;
   text-align: left;
+
+  display: flex;
+  flex-wrap: wrap;
 
 }
 

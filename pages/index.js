@@ -10,7 +10,6 @@ export default function Home() {
         <Header />
         <Main />
         <Footer />
-
         <h5
           style={{
             textAlign: "center",
