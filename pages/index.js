@@ -11,8 +11,13 @@ export default function Home() {
         <Main />
         <Footer />
 
-        <h5>Created by Assirem @Dev</h5>
-        
+        <h5
+          style={{
+            textAlign: "center",
+          }}
+        >
+          Created by Assirem @Dev YOYO
+        </h5>
       </div>
     </div>
   );

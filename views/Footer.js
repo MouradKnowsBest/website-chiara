@@ -7,8 +7,7 @@ function Footer() {
     <footer
       style={{
         position: "relative",
-        display: "flex",
-        justifyContent: "center",
+        marginLeft: "350px",
       }}
       className={styles.footer}
     >
