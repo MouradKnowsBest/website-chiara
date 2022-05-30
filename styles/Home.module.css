@@ -7,8 +7,9 @@
 } */
 
 .container {
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 0.1rem 5rem;
   background-color : #797673;
+  /* width: 1200px; */
 
 }
 
@@ -39,18 +40,27 @@
 
 .footer {
   position: "relative";
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
   display: flex;
   flex-wrap: wrap;
+
 }
+
+
 
 .footer img{
   height: 600px;
+
+
+  display: flex;
+  flex-wrap: wrap;
+
   position: "absolute";
   top: 0;
   left: 0;
+
 }
 
 

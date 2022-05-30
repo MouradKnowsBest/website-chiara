@@ -9,11 +9,13 @@ function Footer() {
       <div
         style={{
           width: "480px",
+          left: "-220px",
+          top: "220px",
+          position: "relative",
           zIndex: 9,
           margin: "180px",
           backgroundColor: "white",
           opacity : 0.85
-
         }}
       >
         <h1 style={{ textAlign: "center" }}>HI, I AM CHIARA !</h1>

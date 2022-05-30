@@ -18,7 +18,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          Created by Assirem @Dev
+          Created by Assirem@Dev
         </h5>
 
     </div>
