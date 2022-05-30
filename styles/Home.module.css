@@ -21,14 +21,13 @@
 .subcontainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 10rem;
+  padding: 10rem 10rem 10rem 10rem;
   background-color : #F1EAE4;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
 
   justify-content: center;
