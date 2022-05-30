@@ -5,11 +5,14 @@ import Footer from "../views/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div   className={styles.container}>
       <div className={styles.subcontainer}>
         <Header className={styles.header}/>
-        <Main className={styles.main}/>
+        <Main   className={styles.main}/>
         <Footer className={styles.footer} />
+
+
+      </div>
         <h5
           style={{
             textAlign: "center",
@@ -17,7 +20,7 @@ export default function Home() {
         >
           Created by Assirem @Dev
         </h5>
-      </div>
+
     </div>
   );
 }

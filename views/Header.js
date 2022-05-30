@@ -36,7 +36,7 @@ function Header() {
         </div>
 
         <img
-          style={{ height: "510px" }}
+          style={{ height: "510px"}}
           src="./chiara-portrait.png"
           alt="chiara-portrait"
         ></img>
@@ -44,7 +44,7 @@ function Header() {
 
       <p
         style={{
-          marginTop: "120px",
+          marginTop: "30px",
           textAlign: "center",
           textIndent: 15,
           textAlign: "justify",

@@ -3,24 +3,8 @@ import styles from "../styles/Home.module.css";
 
 function Footer() {
   return (
-
-    <footer
-      style={{
-        position: "relative",
-        marginLeft: "350px",
-      }}
-      className={styles.footer}
-    >
-      <img
-        style={{
-          height: "510px",
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }}
-        src="./chiara-portrait.png"
-        alt="chiara-portrait"
-      ></img>
+    <footer className={styles.footer}>
+      <img src="./chiara-footer.jpg" alt="chiara-portrait"></img>
 
       <div
         style={{
@@ -28,19 +12,21 @@ function Footer() {
           zIndex: 9,
           margin: "180px",
           backgroundColor: "white",
+          opacity : 0.85
+
         }}
       >
-        <h1>HI, I AM CHIARA !</h1>
-        <subtitle>HOLISTIC HEALTH & WELNESS COACH</subtitle>
+        <h1 style={{ textAlign: "center" }}>HI, I AM CHIARA !</h1>
+        <h5 style={{ textAlign: "center",  fontStyle:"italic" }}>
+          HOLISTIC HEALTH & WELNESS COACH
+        </h5>
         <p
           style={{
-            marginTop: "80px",
+            marginTop: "10px",
             textAlign: "center",
             margin: "20px",
-            marginTop: "25px",
             textIndent: 30,
-            textAlign:"justify"
-
+            textAlign: "justify",
           }}
         >
           Creating a life you love takes a willingness to dig under the surface
@@ -58,14 +44,13 @@ function Footer() {
             backgroundColor: "black",
             color: "#F1EAE4",
             padding: "10px",
-            marginLeft: "170px",
+            marginLeft: "180px",
+            marginBottom: "10px"
           }}
         >
           LEARN MORE
         </button>
       </div>
-
-
     </footer>
   );
 }

@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 function Main() {
   return (
-    <main style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}} className={styles.main}>
+    <main className={styles.main}>
       <p style={{ transform: "rotate(-90deg)" }} className={styles.description}>
         How can I help{" "}
       </p>
