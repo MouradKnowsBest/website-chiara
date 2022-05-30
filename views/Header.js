@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 import React from "react";
-//import './Header.css'
 
 function Header() {
   return (
@@ -16,7 +15,7 @@ function Header() {
         Align With <b>Chiara</b>
       </h2>
 
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div style={{ display: "flex", flexWrap:"wrap", justifyContent: "space-around" }}>
         <div>
           <div style={{ width: "550px" }}>
             <h3>HOLISTIC HEALTH & WELLNESS COACH</h3>
@@ -27,7 +26,8 @@ function Header() {
               style={{
                 backgroundColor: "black",
                 color: "#F1EAE4",
-                padding: "10px",
+                padding: "15px",
+                margin: "10px"
               }}
             >
               EXPLORE
@@ -48,7 +48,6 @@ function Header() {
           textAlign: "center",
           textIndent: 15,
           textAlign: "justify",
-          width: "900px",
           margin: "auto",
         }}
       >

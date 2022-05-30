@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.subcontainer}>
-        <Header />
-        <Main />
-        <Footer />
+        <Header className={styles.header}/>
+        <Main className={styles.main}/>
+        <Footer className={styles.footer} />
         <h5
           style={{
             textAlign: "center",
