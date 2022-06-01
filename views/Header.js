@@ -6,16 +6,24 @@ function Header() {
     <div>
       <title>Align With Chiara</title>
       <meta name="description" content="Align With Chiara" />
-      {/* <h1 className={styles.title}>
-        Align With{" "}
-        <a href="https://www.instagram.com/alignwithchiara/?hl=fr"> Chiara!</a>
-      </h1> */}
-
       <h2 style={{ marginBottom: "80px" }} className={styles.title}>
-        Align With <b>Chiara</b>
+        Align With{" "}
+        <b>
+          {" "}
+          <a href="https://www.instagram.com/alignwithchiara/?hl=fr">
+            {" "}
+            Chiara!
+          </a>
+        </b>
       </h2>
 
-      <div style={{ display: "flex", flexWrap:"wrap", justifyContent: "space-around" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}
+      >
         <div>
           <div style={{ width: "550px" }}>
             <h3>HOLISTIC HEALTH & WELLNESS COACH</h3>
@@ -27,7 +35,7 @@ function Header() {
                 backgroundColor: "black",
                 color: "#F1EAE4",
                 padding: "15px",
-                margin: "10px"
+                margin: "10px",
               }}
             >
               EXPLORE
@@ -36,7 +44,7 @@ function Header() {
         </div>
 
         <img
-          style={{ height: "510px"}}
+          style={{ height: "510px" }}
           src="./chiara-portrait.png"
           alt="chiara-portrait"
         ></img>
@@ -44,7 +52,7 @@ function Header() {
 
       <p
         style={{
-          marginTop: "30px",
+          marginTop: "120px",
           textAlign: "center",
           textIndent: 15,
           textAlign: "justify",

@@ -1,23 +1,19 @@
-/* @media all and (min-width: 600px) and (max-width: 1280px) {
-
-.container{
-  display: flex
+.all{
+  background-color : #797673;
+  padding: 5rem 5rem 0.1rem 5rem;
 }
 
-} */
 
 .container {
   padding: 5rem 5rem 0.1rem 5rem;
   background-color : #797673;
-  /* width: 1200px; */
-
 }
 
 .subcontainer {
   display: flex;
   flex-wrap: wrap;
   padding: 10rem 10rem 10rem 10rem;
-  background-color : #F1EAE4;
+  background-color : #f1e4e4;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
 

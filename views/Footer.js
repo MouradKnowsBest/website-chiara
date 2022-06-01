@@ -4,9 +4,9 @@ import styles from "../styles/Home.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <img src="./chiara-footer.jpg" alt="chiara-portrait"></img>
+      <img src="./chiara-footer.jpg" alt="chiara-portrait"></img> 
 
-      <div
+       <div
         style={{
           width: "480px",
           left: "-220px",
