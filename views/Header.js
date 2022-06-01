@@ -1,7 +1,8 @@
-import styles from "../styles/Home.module.css";
 import React from "react";
+import styles from "../styles/Home.module.css";
 
 function Header() {
+
   return (
     <div>
       <title>Align With Chiara</title>
@@ -10,7 +11,8 @@ function Header() {
         Align With{" "}
         <b>
           {" "}
-          <a href="https://www.instagram.com/alignwithchiara/?hl=fr">
+          <a href="https://www.instagram.com/alignwithchiara/?hl=fr"
+          >
             {" "}
             Chiara!
           </a>
@@ -30,16 +32,20 @@ function Header() {
             <p style={{ fontSize: "60px" }}>
               HELPING YOU TO DISCOVER HOW TO LIVE YOUR BEST LIFE
             </p>
-            <button
-              style={{
-                backgroundColor: "black",
-                color: "#F1EAE4",
-                padding: "15px",
-                margin: "10px",
-              }}
-            >
-              EXPLORE
-            </button>
+
+            <form action="https://www.instagram.com/alignwithchiara/?hl=fr" target="_blank">
+              <input
+                style={{
+                  backgroundColor: "black",
+                  color: "#F1EAE4",
+                  padding: "15px",
+                  margin: "10px",
+                }}
+                type="submit"
+                value="EXPLORE"
+              />
+            </form>
+
           </div>
         </div>
 

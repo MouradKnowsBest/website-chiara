@@ -9,7 +9,7 @@ function Main() {
       </p>
 
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+        <a href="/Services/Coaching"  target="_blank" className={styles.card}>
           <h2>COACHING &rarr;</h2>
           <img
             style={{ height:"300px", width:"auto" }}
@@ -20,7 +20,7 @@ function Main() {
         </a>
       </div>
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+        <a href="/Services/Yoga"  target="_blank" className={styles.card}>
           <h2>YOGA &rarr;</h2>
           <img
             style={{ height:"300px", width:"auto" }}
@@ -32,7 +32,7 @@ function Main() {
       </div>
 
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+        <a href="/Services/Astrology"  target="_blank" className={styles.card}>
           <h2>ASTROLOGY &rarr;</h2>
           <img
             style={{ height:"300px", width:"auto" }}

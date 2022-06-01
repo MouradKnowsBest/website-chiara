@@ -1,13 +1,8 @@
-.all{
+.container{
   background-color : #797673;
   padding: 5rem 5rem 0.1rem 5rem;
 }
 
-
-.container {
-  padding: 5rem 5rem 0.1rem 5rem;
-  background-color : #797673;
-}
 
 .subcontainer {
   display: flex;
@@ -110,4 +105,55 @@
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+}
+
+
+/* .Astrology .Yoga .Coaching {
+  background-color: aqua;
+} */
+
+.coaching{
+  background-color: aqua;
+}
+
+.yoga{
+  background-color: aqua;
+}
+
+.astrology{
+  background-color: aqua;
+}
+
+
+.articleTitle h1{
+  font-size: 75px;
+}
+
+.articleTitle{
+
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+
+.articleImg {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.articleImg img{
+  width: 800px;
+  height: auto;
+  text-align:center;
+  margin:auto;
+  display:flex;
+  margin-bottom: 25px;
+}
+
+.articleContent p{
+  margin-top: 40px;
+  text-align: center;
+  text-indent: 25px;
+  text-align:justify;
+  margin:50px ;
 }

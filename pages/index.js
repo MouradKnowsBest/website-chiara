@@ -5,7 +5,7 @@ import Footer from "../views/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.all}>
+    <div className={styles.container}>
       <div className={styles.subcontainer}>
         <Header className={styles.header} />
         <Main className={styles.main} />
@@ -13,10 +13,21 @@ export default function Home() {
       </div>
       <h5
         style={{
-          textAlign: "center",
+          textAlign: "right",
         }}
       >
-        Created by Assirem@Dev
+        Created by{" "}
+        <b>
+          {" "}
+          <a
+            style={{ color: "#E89005" }}
+            href="https://portfolio-assirem-dev.netlify.app/"
+            target="_blank"
+          >
+            {" "}
+            Assirem@Dev
+          </a>
+        </b>
       </h5>
     </div>
   );

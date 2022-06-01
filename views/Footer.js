@@ -4,9 +4,9 @@ import styles from "../styles/Home.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <img src="./chiara-footer.jpg" alt="chiara-portrait"></img> 
+      <img src="./chiara-footer.jpg" alt="chiara-portrait"></img>
 
-       <div
+      <div
         style={{
           width: "480px",
           left: "-220px",
@@ -15,11 +15,11 @@ function Footer() {
           zIndex: 9,
           margin: "180px",
           backgroundColor: "white",
-          opacity : 0.85
+          opacity: 0.85,
         }}
       >
         <h1 style={{ textAlign: "center" }}>HI, I AM CHIARA !</h1>
-        <h5 style={{ textAlign: "center",  fontStyle:"italic" }}>
+        <h5 style={{ textAlign: "center", fontStyle: "italic" }}>
           HOLISTIC HEALTH & WELNESS COACH
         </h5>
         <p
@@ -41,17 +41,23 @@ function Footer() {
           goals. You will receive advice on where you could start in reaching
           those goals, and what, if any, coaching package is right for you.
         </p>
-        <button
-          style={{
-            backgroundColor: "black",
-            color: "#F1EAE4",
-            padding: "10px",
-            marginLeft: "180px",
-            marginBottom: "10px"
-          }}
+
+        <form
+          action="https://www.instagram.com/alignwithchiara/?hl=fr"
+          target="_blank"
         >
-          LEARN MORE
-        </button>
+          <input
+            style={{
+              backgroundColor: "black",
+              color: "#F1EAE4",
+              padding: "10px",
+              marginLeft: "180px",
+              marginBottom: "10px",
+            }}
+            type="submit"
+            value="LEARN MORE"
+          />
+        </form>
       </div>
     </footer>
   );
