@@ -32,7 +32,7 @@ export default function Coaching() {
           effective professional development environments.
         </p>
         </div>
-        <a href="../"  target="_blank" className={styles.card}>
+        <a href="../"  target="_blank" className={styles.BackHome}>
         🢀 Get Back Home
         </a>
       </div>

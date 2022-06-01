@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../views/Header";
 import Main from "../views/Main";
 import Footer from "../views/Footer";
+import Assirem from "../views/Assirem";
 
 export default function Home() {
   return (
@@ -11,24 +12,8 @@ export default function Home() {
         <Main className={styles.main} />
         <Footer className={styles.footer} />
       </div>
-      <h5
-        style={{
-          textAlign: "right",
-        }}
-      >
-        Created by{" "}
-        <b>
-          {" "}
-          <a
-            style={{ color: "#E89005" }}
-            href="https://portfolio-assirem-dev.netlify.app/"
-            target="_blank"
-          >
-            {" "}
-            Assirem@Dev
-          </a>
-        </b>
-      </h5>
+
+      <Assirem className={styles.assirem} />
     </div>
   );
 }

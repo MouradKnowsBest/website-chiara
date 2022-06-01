@@ -7,7 +7,7 @@
 .subcontainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 10rem 10rem 10rem 10rem;
+  padding: 5rem 10rem 10rem 10rem;
   background-color : #f1e4e4;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -19,34 +19,196 @@
   align-items: center;
 }
 
-.main {
-  padding: 4rem 0;
+.title h1 {
+  font-size: 7rem;
+  font-weight:lighter;
+  margin-bottom: 40px;
+  text-align: center;
 
-  justify-content: center;
-  align-items: center;
+}
+
+.title b {
+  margin: 0;
+  font-size: 7rem;
+  font-weight:normal;
+  font-style: italic;
+}
+
+.title b:hover{
+  color:  #bb7e7e;
+}
+
+.subtitle{
+  font-size: 2rem;
+  font-weight:normal;
+  font-style: italic;
+  text-align: center;
+}
+.presentation{
+  padding: 50px;
+ display: flex;
+
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+.presentation p{
+  flex: 1;
+  margin: 0;
+  font-size: 4.5rem;
+  font-style: italic;
+  font-family: 'Tiro Devanagari Marathi', serif;
+  padding: 1px;
+}
+
+.presentation img{
+  height: auto;
+  width: 400px;
+  flex: 1;
+  margin: 0;
+  font-size: 2rem;
+  font-weight:normal;
+  font-style: italic;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+
+}
+
+.description p{
+  font-size: 1.5rem;
+  margin-top : 25px;
+  text-indent: 15px;
+  text-align: justify;
+  font-family: 'Tiro Gurmukhi', serif;
+  line-height: 1.8;
+}
+
+.description form {
+  text-align:center;
+}
+
+.description input{
+  font-size: 2rem;
+  color: #F1EAE4;
+  background-color: black;
+  padding: 6px;
+  margin: 10px;
+}
+
+.description input:hover{
+cursor:pointer;
+color: #bb7e7e;
+
+}
+
+
+
+.header title,
+.header description {
+  text-align: center;
+}
+
+.header description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+.main {
+  margin-top: 100px;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  align-items: center;
+  justify-content:space-between;
+
+  height:auto;
+  width:320px;
+
+  margin-right: 35px;
+}
+
+.grid img{
+  height:auto;
+  min-height: 190px;
+  max-height: 400px;
+
+  width:300px
+}
+
+.grid h2{
+font-size: 25px;}
+
+.grid p {
+  text-align: center;
+}
+
+.card {
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: left;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  height: 450px;
+  
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color:  #bb7e7e;
+  border-color:  #797673;
+}
+
+
+.BackHome{
+  margin: 0.1rem;
+  padding: 0.5rem;
+  text-align: left;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  height: 40px;
+}
+
+.BackHome:hover,
+.BackHome:focus,
+.BackHome:active {
+  color:  #bb7e7e;
+  border-color:  #bb7e7e;
+}
+/* FOOTER */
+
 .footer {
-  position: "relative";
+  margin-top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+
   margin-left: auto;
   margin-right: auto;
 
-  display: flex;
-  flex-wrap: wrap;
-
 }
-
-
 
 .footer img{
   height: 600px;
-
-
-  display: flex;
-  flex-wrap: wrap;
 
   position: "absolute";
   top: 0;
@@ -54,63 +216,61 @@
 
 }
 
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  font-weight:lighter
+.footerCard{
+  position: relative;
+  top: 220px;
+  width: 480px;
+  left: -220px;
+  z-index: 9;
+  margin: 180px;
+  background-color: white;
+  opacity: 0.85;
 }
 
-.title b {
-  margin: 0;
-  font-size: 4rem;
-  font-weight:normal;
-  font-style: italic;
+.footerCard h1 {
+text-align: center;
 }
 
-.title,
-.description {
+.footerCard h5 {
   text-align: center;
+font-style: italic ;
 }
 
-.description {
-  margin: 4rem 0;
+.footerCard p {
+  margin-top: 10px;
+  margin: 20px;
+  text-indent: 15px;
+  text-align: justify;
   line-height: 1.5;
-  font-size: 1.5rem;
+
+}
+
+.footerCard form {
+text-align: center;
+}
+
+.footerCard input {
+  cursor:pointer;
+  color: #F1EAE4;
+  background-color: black;
+  padding: 10px;
+
+}
+.footerCard input:hover,
+.footerCard input:focus,
+.footerCard input:active {
+  color:  #bb7e7e;
+}
+
+.assirem h5{
+text-align: right;
+}
+
+.assirem a{
+color: #E89005
 }
 
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-
-/* .Astrology .Yoga .Coaching {
-  background-color: aqua;
-} */
 
 .coaching{
   background-color: aqua;
@@ -156,4 +316,9 @@
   text-indent: 25px;
   text-align:justify;
   margin:50px ;
+  font-size: 1.5rem;
+  font-family: 'Tiro Gurmukhi', serif;
+  line-height: 1.8;
+  font-style: italic;
+
 }

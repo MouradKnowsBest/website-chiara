@@ -8,10 +8,7 @@ export default function Yoga() {
           <h1> First Post Yoga Article</h1>
         </div>
         <div className={styles.articleImg}>
-          <img
-           src="../yoga.webp"
-           alt="chiara-portrait"
-          ></img>
+          <img src="../yoga.webp" alt="chiara-portrait"></img>
         </div>
 
         <div className={styles.articleContent}>
@@ -33,12 +30,10 @@ export default function Yoga() {
           </p>
         </div>
 
-              <a href="../" target="_blank" className={styles.card}>
-        🢀 Get Back Home
-      </a>
+        <a href="../" target="_blank" className={styles.BackHome}>
+          🢀 Get Back Home
+        </a>
       </div>
-
-
     </div>
   );
 }

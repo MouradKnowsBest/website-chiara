@@ -6,31 +6,10 @@ function Footer() {
     <footer className={styles.footer}>
       <img src="./chiara-footer.jpg" alt="chiara-portrait"></img>
 
-      <div
-        style={{
-          width: "480px",
-          left: "-220px",
-          top: "220px",
-          position: "relative",
-          zIndex: 9,
-          margin: "180px",
-          backgroundColor: "white",
-          opacity: 0.85,
-        }}
-      >
-        <h1 style={{ textAlign: "center" }}>HI, I AM CHIARA !</h1>
-        <h5 style={{ textAlign: "center", fontStyle: "italic" }}>
-          HOLISTIC HEALTH & WELNESS COACH
-        </h5>
-        <p
-          style={{
-            marginTop: "10px",
-            textAlign: "center",
-            margin: "20px",
-            textIndent: 30,
-            textAlign: "justify",
-          }}
-        >
+      <card className={styles.footerCard}>
+        <h1>HI, I AM CHIARA !</h1>
+        <h5>HOLISTIC HEALTH & WELNESS COACH</h5>
+        <p>
           Creating a life you love takes a willingness to dig under the surface
           of who you are and reveal what it is you want for your life. Having a
           coach to support, challenge and motivate you can make the sometimes
@@ -47,18 +26,11 @@ function Footer() {
           target="_blank"
         >
           <input
-            style={{
-              backgroundColor: "black",
-              color: "#F1EAE4",
-              padding: "10px",
-              marginLeft: "180px",
-              marginBottom: "10px",
-            }}
             type="submit"
             value="LEARN MORE"
           />
         </form>
-      </div>
+      </card>
     </footer>
   );
 }
