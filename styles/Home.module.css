@@ -103,7 +103,9 @@ color: #bb7e7e;
 
 }
 
-
+.title {
+  text-align: center;
+}
 
 .header title,
 .header description {

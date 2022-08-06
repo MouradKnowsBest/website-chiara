@@ -1,13 +1,50 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "../styles/Home.module.css";
+import Link from 'next/link';
 
 function Header() {
+
+  const [loggedIn, setLoggedIn] = useState(Boolean)
+
+    
+    function signIn(){
+      setLoggedIn(false)  
+        }
+
+    function signOut(){
+          setLoggedIn(true)  
+            }
+    
+
+
   return (
     <header className={styles.header}>
-      <title>Align With Chiara</title>
+      <title>Align With Chiara </title>
       <meta name="description" content="Align With Chiara" />
       <div>
         <div className={styles.title}>
+          <div>
+            <button onClick={signIn}>SignIn</button>
+            <button onClick={signOut}>signOut</button>
+
+            <h5> 
+              {loggedIn ?
+              <>
+            <a>Signed Out ://</a>
+
+              </>
+            : 
+            <>
+             Signed In !
+            <Link href="/posts/admin">
+              Access the Admin Space
+            </Link>
+            </>
+            }               
+
+
+            </h5>
+          </div>
           <h1>
             Align With{" "}
             <b>
