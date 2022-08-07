@@ -312,6 +312,18 @@ color: #E89005
   margin-bottom: 25px;
 }
 
+.articleContent {
+  margin-top: 40px;
+  text-align: center;
+  text-indent: 25px;
+  text-align:justify;
+  margin:50px ;
+  font-size: 1.5rem;
+  font-family: 'Tiro Gurmukhi', serif;
+  line-height: 1.8;
+  font-style: italic;
+}
+ 
 .articleContent p{
   margin-top: 40px;
   text-align: center;
@@ -322,5 +334,5 @@ color: #E89005
   font-family: 'Tiro Gurmukhi', serif;
   line-height: 1.8;
   font-style: italic;
-
 }
+
