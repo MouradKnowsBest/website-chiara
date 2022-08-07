@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import styles from "../styles/Home.module.css";
 
 function Main() {
+
   return (
     <>
       <div className={styles.title}>
         <h1> How can I help ? </h1>
       </div>
+      
       <main className={styles.main}>
         <div className={styles.grid}>
           <a href="/Services/Coaching" target="_blank" className={styles.card}>
@@ -31,7 +33,6 @@ function Main() {
             <p>Find in-depth information about Astrology sessions</p>
           </a>
         </div>
-
       </main>
     </>
   );

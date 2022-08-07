@@ -7,7 +7,7 @@ import firebase  from '../../config/fire-config';
 
 export default function Admin() {
 
-  const [image, setImage] = useState();
+  const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
   const [subTitle, setSubTitle] = useState('');
   const [content, setContent] = useState('');
@@ -20,7 +20,7 @@ export default function Admin() {
     event.preventDefault();
 
     firebase.firestore()
-    .collection('admin')
+    .collection('coaching')
     .add({
       title: title,
       content: content,
@@ -33,6 +33,7 @@ export default function Admin() {
     setTitle('');
     setSubTitle(' ');
     setContent('');
+    setImage('');
   }
 
 

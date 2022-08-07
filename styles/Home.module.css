@@ -336,3 +336,27 @@ color: #E89005
   font-style: italic;
 }
 
+.allArticles{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.oneArticle{
+  border: 1px solid #050505;
+  width: 400px;
+  margin-top: 40px;
+  text-align: center;
+  text-indent: 25px;
+  text-align:justify;
+}
+
+.allArticles ul {
+  list-style-type: none;
+}
+
+.allArticles li {
+  list-style-type: none;
+
+}
