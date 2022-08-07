@@ -55,16 +55,16 @@ export default function Coaching() {
         <div className={styles.allArticles}>
           {coachingArticles.map((coachingArticle) => (
             <div className={styles.oneArticle}>
-              <ul>
+              <ol>
                 <li key={coachingArticle.id}>
-                  <h1> {coachingArticle.title}</h1>
-                  <h2> {coachingArticle.subTitle}</h2>
-                  <p className={styles.articleContent}>
+                <li>  <h1> {coachingArticle.title}</h1></li>
+                <li>  <h2> {coachingArticle.subTitle}</h2></li>
+                <li>  <p className={styles.articleContent}>
                     {" "}
                     {coachingArticle.content}
-                  </p>
+                  </p></li>
                 </li>
-              </ul>
+              </ol>
             </div>
           ))}
         </div>
