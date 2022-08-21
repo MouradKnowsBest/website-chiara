@@ -1,13 +1,27 @@
 import { useState, useEffect }  from "react";
 import styles from "../../styles/Home.module.css";
-import fire from '../../config/fire-config.js';
+import {firebaseApp} from "../../config/fire-config";
+import 'firebase/compat/firestore';
+import { storage} from "../../config/fire-config";
 
 export default function Coaching() {
 
   const [coachingArticles, setBlogs] = useState([]);
+  const allInputs = {imgUrl: ''}
+  const [imageAsFile, setImageAsFile] = useState('')
+  const [imageAsUrl, setImageAsUrl] = useState(allInputs)
+
+
+// TODO Handle images grabing by group and then splitting by it's article
+
+// TODO Add option of deleting articles from DB
+
+// TODO add date and author options on article editing component
+
+// TODO add option of order articles by date
 
   useEffect(() => {
-      fire.firestore()
+    firebaseApp.firestore()
         .collection('coaching')
         .onSnapshot(snap => {
           const blogs = snap.docs.map(doc => ({
@@ -15,8 +29,32 @@ export default function Coaching() {
             ...doc.data()
           }));
           setBlogs(blogs);
-
         });
+
+
+        console.log('start of upload')
+        // async magic goes here...
+        if(imageAsFile === '') {
+          console.error(`not an image, the image file is a ${typeof(imageAsFile)}`)
+        }
+        const uploadTask = storage.ref(`/images/${imageAsFile.name}`).put(imageAsFile)
+        //initiates the firebase side uploading 
+        uploadTask.on('state_changed', 
+        (snapShot) => {
+          //takes a snap shot of the process as it is happening
+          console.log(snapShot)
+        }, (err) => {
+          //catches the errors
+          console.log(err)
+        }, () => {
+          // gets the functions from storage refences the image storage in firebase by the children
+          // gets the download url then sets the image from firebase as the value for the imgUrl key:
+          storage.ref('images').child(imageAsFile.name).getDownloadURL()
+           .then(fireBaseUrl => {
+             setImageAsUrl(prevObject => ({...prevObject, imgUrl: fireBaseUrl}))
+           })
+        })
+
     }, []);
   console.log(coachingArticles)
 
@@ -51,19 +89,32 @@ export default function Coaching() {
           </p>
         </div>
 
+        {/* TODO Order Articles by publication time */}
 
         <div className={styles.allArticles}>
           {coachingArticles.map((coachingArticle) => (
             <div className={styles.oneArticle}>
               <ol>
                 <li key={coachingArticle.id}>
-                <li>  <h1> {coachingArticle.title}</h1></li>
-                <li>  <h2> {coachingArticle.subTitle}</h2></li>
-                <li>  <p className={styles.articleContent}>
+                  <li>
                     {" "}
-                    {coachingArticle.content}
-                  </p></li>
+                    <h1> {coachingArticle.title}</h1>
+                  </li>
+                  <li>
+                    {" "}
+                    <h2> {coachingArticle.subTitle}</h2>
+                  </li>
+                  <li>
+                    {" "}
+                    <p className={styles.articleContent}>
+                      {" "}
+                      {coachingArticle.content}
+                    </p>
+                  </li>
                 </li>
+                <div className={styles.articleImg}>
+                  <img src={imageAsUrl.imgUrl} alt="image tag" />
+                </div>
               </ol>
             </div>
           ))}
